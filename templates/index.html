@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="TACC-TWELVE APOSTLES CHURCH IN CHRIST">
+<meta name="keywords" content="TACC, Twelve, Apostles, Church, Christ, Ceaser, Nongqunga, Prof">
+<meta name="author" content="TACC">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- SITE TITLE -->
+<title></title>
+
+<!-- =========================
+      FAV AND TOUCH ICONS  
+========================= -->	
+<link rel="icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+
+<!-- =========================STYLESHEET========================= -->	
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- FORMSTONE NAVIGATION -->
+<link rel="stylesheet" href="css/navigation.css">
+
+<!-- COLORS -->
+<link rel="stylesheet" href="css/colors/blue.css"> <!-- DEFAULT COLOR/ CURRENTLY USING -->
+<!-- <link rel="stylesheet" href="css/colors/red.css"> -->
+<!-- <link rel="stylesheet" href="css/colors/green.css"> -->
+<!-- <link rel="stylesheet" href="css/colors/yellow.css"> -->
+<!-- <link rel="stylesheet" href="css/colors/turquoise.css"> -->
+<!-- <link rel="stylesheet" href="css/colors/purple.css"> -->
+<!-- <link rel="stylesheet" href="css/colors/orange.css"> -->
+
+<!-- CUSTOM STYLESHEET -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- RESPONSIVE FIXES -->
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="stylesheet" href="js/fancy/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+
+<!-- Jquery -->
+<script src="js/jquery-2.0.3.min.js"></script>
+
+<script type="text/javascript" src="js/fancy/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<script>
+//make sure that js is enabled
+$('html').addClass('js');
+</script>
+<!--[if IE]>
+<style>label {display: block;}</style>
+<![endif]-->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+<script>
+// By Chris Coyier & tweaked by Mathias Bynens
+$(function() {
+
+	// Find all YouTube videos
+	var $allVideos = $("iframe[src^='https://www.youtube.com']"),
+
+	    // The element that is fluid width
+	    $fluidEl = $("#utube");
+
+	// Figure out and save aspect ratio for each video
+	$allVideos.each(function() {
+
+		$(this)
+			.data('aspectRatio', this.height / this.width)
+			
+			// and remove the hard coded width/height
+			.removeAttr('height')
+			.removeAttr('width');
+
+	});
+
+	// When the window is resized
+	// (You'll probably want to debounce this)
+	$(window).resize(function() {
+
+		var newWidth = $fluidEl.width();
+		
+		// Resize all videos according to their own aspect ratio
+		$allVideos.each(function() {
+
+			var $el = $(this);
+			$el
+				.width(newWidth)
+				.height(newWidth * $el.data('aspectRatio'));
+
+		});
+
+	// Kick off one resize to fix all videos on page load
+	}).resize();
+
+});
+</script>
+</head>
+<body>
+<!-- =========================PRELOADER========================== -->
+<div class="preloader"></div>
+<!-- =========================NAVIGATION========================== -->
+{menu}
+<!-- =========================HOME========================= -->	
+{content}
+<!-- =========================HOME========================= -->	
+<!-- =========================NEWS========================= -->
+{news}
+<!-- =========================NEWS========================= -->	
+<!-- =========================EVENTS========================= -->
+{events}
+<!-- =========================EVENTS========================= -->	
+<!-- =========================GALLERY========================= -->
+{gallery}	
+<!-- =========================GALLERY========================= -->
+<!-- =========================PODCASTS========================= -->
+{podcasts}
+<!-- =========================PODCASTS========================= -->
+<!-- =========================DOCUMENT========================= -->
+{documents}
+<!-- =========================DOCUMENT========================= -->
+
+<!-- =========================FOOTER========================= -->	
+<footer class="dark-bg">
+	<!-- BACK TO TOP -->
+	<a class="icon back-to-top" href="index.php"><i class="fa fa-home"></i></a>
+	
+	<!-- SOCIAL NAVIGATION -->
+	<ul class="social-navigation">
+	<li><a href="https://www.facebook.com/groups/taccgrp" class="icon" target="_blank"><i class="fa fa-facebook"></i></a></li>
+	<li><a href="#" class="icon"><i class="fa fa-twitter"></i></a></li>
+	<li><a href="#" class="icon"><i class="fa fa-behance"></i></a></li>
+	<li><a href="#" class="icon"><i class="fa fa-google-plus"></i></a></li>
+	<li><a href="#" class="icon"><i class="fa fa-linkedin"></i></a></li>
+	<li><a href="#" class="icon"><i class="fa fa-instagram"></i></a></li>
+	</ul>
+	
+	<!-- COPYRIGHT -->
+	<p>
+		&copy; 2016 TACC | Made with <i class="fa fa-heart heart"></i> by <a href="http://lumitech.co.za" target="_blank">Lumitech Systems</a>
+	</p>
+</footer>
+<!-- =========================SCRIPTS========================= -->
+<!-- Formstone Navigation -->
+<script src="js/core.js"></script>
+<script src="js/mediaquery.js"></script>
+<script src="js/swap.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/navigation.js"></script>
+
+<!-- Smoothscroll -->
+<script src="js/smoothscroll.js"></script>
+
+<!-- Jquery Nav -->
+<script src="js/jquery.nav.js"></script>
+
+<!-- ImagesLoaded -->
+<script src="js/jquery.imagesloaded.js"></script>
+
+<!-- Wookmark -->
+<script src="js/jquery.wookmark.min.js"></script>
+
+<!-- Retina -->
+<script src="js/retina.min.js"></script>
+
+<!-- Custom Script -->
+<script src="js/custom.js"></script>
+
+</body>
+</html>

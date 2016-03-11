@@ -1,0 +1,17 @@
+{status}
+<h2>Edit News</h2>
+<form action="index.php?menu=news&view={id}&edit_article={artitle_id}&save" enctype="multipart/form-data" method="post">
+<label for="title">title: </label>
+<input name="title" value="{title}" type="text" placeholder="title"/>
+<label for="description">Description</label>
+<textarea id="textarea" name="description" placeholder="description">{description}</textarea>
+<label for="start">Start Date: </label>
+<input name="start" value="{start}" type="text" placeholder="24 July 2016 10H00AM"/>
+<label for="end">End Date: </label>
+<input name="end" value="{end}" type="text" placeholder="25 July 2016 14H00PM"/>
+<label class="select-box">{news_category}</label>
+{pic}
+<label for="picture">Picture: </label><input type="file" name="img"/>
+<button type="submit">Update</button>
+</form>
+<div style="clear:both;">

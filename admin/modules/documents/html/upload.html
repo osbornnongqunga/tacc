@@ -1,0 +1,9 @@
+{status}
+<h2>Add Document</h2>
+<form action="index.php?menu=documents&view={id}&add_doc&save" enctype="multipart/form-data" method="post">
+<label for="gallary">Document: </label><input type="file" name="document"/>
+<label for="description">Description</label>
+<textarea id="textarea" name="description" placeholder="description">{description}</textarea>
+<button type="submit">Save</button>
+</form>
+<div style="clear:both;">

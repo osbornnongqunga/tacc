@@ -1,0 +1,13 @@
+{status}
+<h2>Add Podcast</h2>
+<form action="index.php?menu=podcasts&view={id}&add_podcast&save" enctype="multipart/form-data" method="post">
+<label for="title">title: </label>
+<input name="title" value="{title}" type="text" placeholder="title"/>
+<label for="description">Description</label>
+<textarea id="textarea" name="description" placeholder="description">{description}</textarea>
+<label for="code">YouTube Code</label>
+<textarea id="textarea" name="code" placeholder="YouTube Code">{code}</textarea>
+<label class="select-box">{podcast_category}</label>
+<button type="submit">Save</button>
+</form>
+<div style="clear:both;">

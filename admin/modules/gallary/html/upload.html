@@ -1,0 +1,22 @@
+<script type="text/javascript">
+function add_file_field(){
+var container=document.getElementById('file_container');
+var file_field=document.createElement('input');
+file_field.name='images[]';
+file_field.type='file';
+container.appendChild(file_field);
+var br_field=document.createElement('br');
+container.appendChild(br_field);
+}
+</script>
+<h2>Add Pictures</h2>
+{status}
+<form action="index.php?menu=gallary&view={id}&add_pic&save" enctype="multipart/form-data" method="post">
+<label for="gallary">Picture: </label>
+<input type="hidden" name="MAX_FILE_SIZE"/>
+<input type="file" name="images[]"/>
+<div id="file_container"></div>
+<button type="submit">Save</button>
+</form>
+<button type="button" onclick="javascript:add_file_field();" >Add More Pictures +</button>
+<div style="clear:both;">
