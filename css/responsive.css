@@ -213,7 +213,7 @@ You can use this template for your personal purposes only, and it's under Creati
 @media (min-width: 930px)  {
 	.navigation-logo {
 		height: auto;
-		padding: 25px;
+		/*padding: 25px;*/
 	}
 	
 	.navigation {
