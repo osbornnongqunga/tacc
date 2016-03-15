@@ -50,6 +50,7 @@ switch ( $_GET['menu'])
 			   $parts['events'] = '';
 			   $parts['gallery'] = '';
 			   $parts['podcasts'] = '';
+			   $parts['documents'] = '';
 			}
 		break;
 		case 'apostle':
@@ -59,6 +60,7 @@ switch ( $_GET['menu'])
 			   $parts['events'] = '';
 			   $parts['gallery'] = '';
 			   $parts['podcasts'] = '';
+			   $parts['documents'] = '';
 			}
 		break;
 		case 'documents':
@@ -68,6 +70,7 @@ switch ( $_GET['menu'])
 			   $parts['events'] = '';
 			   $parts['gallery'] = '';
 			   $parts['podcasts'] = '';
+			   $parts['documents'] = '';
 			}
 		break;
 		case 'gallery':
@@ -77,6 +80,7 @@ switch ( $_GET['menu'])
 			   $parts['events'] = '';
 			   $parts['gallery'] = '';
 			   $parts['podcasts'] = '';
+			   $parts['documents'] = '';
 			}
 		break;
 		case 'podcasts':
@@ -86,6 +90,7 @@ switch ( $_GET['menu'])
 			   $parts['events'] = '';
 			   $parts['gallery'] = '';
 			   $parts['podcasts'] = '';
+			   $parts['documents'] = '';
 			}
 		break;
 		case 'article':
@@ -95,6 +100,7 @@ switch ( $_GET['menu'])
 			   $parts['events'] = '';
 			   $parts['gallery'] = '';
 			   $parts['podcasts'] = '';
+			   $parts['documents'] = '';
 			}
 		break;
 		case 'event':
@@ -104,6 +110,7 @@ switch ( $_GET['menu'])
 			   $parts['events'] = '';
 			   $parts['gallery'] = '';
 			   $parts['podcasts'] = '';
+			   $parts['documents'] = '';
 			}
 		break;
 		case 'branch':
@@ -113,6 +120,7 @@ switch ( $_GET['menu'])
 			   $parts['events'] = '';
 			   $parts['gallery'] = '';
 			   $parts['podcasts'] = '';
+			   $parts['documents'] = '';
 			}
 		break;
 		case 'contact':
@@ -122,6 +130,7 @@ switch ( $_GET['menu'])
 			   $parts['events'] = '';
 			   $parts['gallery'] = '';
 			   $parts['podcasts'] = '';
+			   $parts['documents'] = '';
 			}
 		break;
     }

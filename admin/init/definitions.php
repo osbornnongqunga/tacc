@@ -16,7 +16,7 @@ define( 'DATETIME', date( 'Y-m-d H:i:s' ));
 function ADODB_Connect()
 {
 	$db = '';
-	$db = &ADONewConnection(DB_DRIVER);
+	$db = ADONewConnection(DB_DRIVER);
 	$db->debug = false;
 	$db->PConnect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 	$db->SetFetchMode(ADODB_FETCH_ASSOC);
